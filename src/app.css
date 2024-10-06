@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-base text-white overflow-x-hidden bg-dark;
+  }
+}
+:root {
+  --swiper-navigation-size: 24px;
+}
+
+#toggle-navigation {
+  @apply relative flex items-center justify-center w-[50px] h-[50px] z-20;
+  span {
+    &.close {
+      @apply absolute flex items-center justify-center w-6 h-6 ;
+      span {
+        @apply absolute flex items-stretch justify-between w-6 h-[2px] before:block after:block before:content-[''] after:content-[''] before:w-0 after:w-0 before:h-[2px] after:h-[2px] before:bg-white after:bg-white before:transition-all after:transition-all before:duration-150 after:duration-150 first:rotate-45 last:-rotate-45;
+      }
+    }
+    &.menu {
+      @apply absolute flex flex-col items-center justify-between w-6 h-4;
+      span {
+        @apply flex items-stretch odd:justify-center even:justify-between w-6 h-[2px] before:block even:after:block before:transition-all even:after:transition-all before:duration-150 even:after:duration-150 before:h-[2px] even:after:h-[2px] before:bg-white even:after:bg-white before:content-[''] even:after:content-[''] odd:before:w-full even:before:w-1/2 even:after:w-1/2;
+      }
+    }
+  }
+  &[aria-expanded=true] {
+    span {
+      &.close {
+        span {
+          @apply before:w-1/2 after:w-1/2;
+        }
+      }
+      &.menu {
+        @apply absolute flex flex-col items-center justify-between w-6 h-4;
+        span {
+          @apply odd:before:w-0 even:before:w-0 even:after:w-0 odd:before:opacity-0 even:before:opacity-0 even:after:opacity-0;
+        }
+      }
+    }
+  }
+}
+
+html {
+  @apply !mt-0;
+}
+.nojq {
+  @apply opacity-5 hover:opacity-100;
+}
