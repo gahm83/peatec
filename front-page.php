@@ -93,7 +93,7 @@ get_header();
 
 <section>
   <div class="py-52">
-    <div class="w-11/12 max-w-screen-lg mx-auto">
+    <div class="w-11/12 max-w-screen-lg mx-auto space-y-32">
       <div class="grid md:grid-cols-12">
         <div class="relative md:col-span-4">
           <h2 class="text-green uppercase md:absolute md:bottom-full md:pb-2">Servicios</h2>
@@ -103,16 +103,98 @@ get_header();
           <p>Desde nuestra fundación en 2020, hemos combinado la energía y la innovación de un equipo joven con la experiencia y sabiduría de profesionales que llevan más de una década transformando el sector. Este equilibrio nos permite ofrecer soluciones integrales que no solo responden a las necesidades actuales de nuestros clientes, sino que también anticipan los desafíos futuros.</p>
         </div>
       </div>
-
-      <div class="swiper">
+      <div class="swiper swiper-servicios">
         <div class="swiper-wrapper">
           <a class="swiper-slide">
-            <div class="space-y-4">
+            <div class="flex flex-col items-center text-center w-36 mx-auto space-y-4">
               <?php get_template_part('assets/computo'); ?>
               <span>Cómputo</span>
             </div>
           </a>
+          <a class="swiper-slide">
+            <div class="flex flex-col items-center text-center w-36 mx-auto space-y-4">
+              <?php get_template_part('assets/impresion'); ?>
+              <span>Impresión</span>
+            </div>
+          </a>
+          <a class="swiper-slide">
+            <div class="flex flex-col items-center text-center w-36 mx-auto space-y-4">
+              <?php get_template_part('assets/software-licencias'); ?>
+              <span>Software y Licencias</span>
+            </div>
+          </a>
+          <a class="swiper-slide">
+            <div class="flex flex-col items-center text-center w-36 mx-auto space-y-4">
+              <?php get_template_part('assets/data-center'); ?>
+              <span>Datacenter</span>
+            </div>
+          </a>
+          <a class="swiper-slide">
+            <div class="flex flex-col items-center text-center w-36 mx-auto space-y-4">
+              <?php get_template_part('assets/seguridad-fisica'); ?>
+              <span>Seguridad física</span>
+            </div>
+          </a>
+          <a class="swiper-slide">
+            <div class="flex flex-col items-center text-center w-36 mx-auto space-y-4">
+              <?php get_template_part('assets/seguridad-logica'); ?>
+              <span>Seguridad lógica</span>
+            </div>
+          </a>
+          <a class="swiper-slide">
+            <div class="flex flex-col items-center text-center w-36 mx-auto space-y-4">
+              <?php get_template_part('assets/perifericos'); ?>
+              <span>Periféricos</span>
+            </div>
+          </a>
+          <a class="swiper-slide">
+            <div class="flex flex-col items-center text-center w-36 mx-auto space-y-4">
+              <?php get_template_part('assets/consultoria-ti'); ?>
+              <span>Consultoría TI</span>
+            </div>
+          </a>
+          <a class="swiper-slide">
+            <div class="flex flex-col items-center text-center w-36 mx-auto space-y-4">
+              <?php get_template_part('assets/virtualizacion'); ?>
+              <span>Virtualización</span>
+            </div>
+          </a>
+          <a class="swiper-slide">
+            <div class="flex flex-col items-center text-center w-36 mx-auto space-y-4">
+              <?php get_template_part('assets/telefonia'); ?>
+              <span>Telefonía</span>
+            </div>
+          </a>
         </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<section>
+  <div class="bg-white text-black py-16 space-y-20">
+    <?php get_template_part('components/marquee', null, array('title' => 'Casos de éxito')); ?>
+    <div class="w-11/12 max-w-screen-lg mx-auto">
+      <div class="grid md:grid-cols-2">
+        <div class="relative">
+          <h2 class="text-green uppercase md:absolute md:bottom-full md:pb-2">Casos de éxito</h2>
+          <h2 class="text-32 font-semibold leading-none">La solución TI
+          que tu empresa necesita</h2>
+        </div>
+        <div class="flex space-x-5">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="w-11/12 max-w-screen-lg mx-auto">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+        </div>
+      </div>
       </div>
     </div>
   </div>
