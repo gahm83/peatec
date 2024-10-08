@@ -10,7 +10,8 @@
   }
 }
 :root {
-  --swiper-navigation-size: 24px;
+  --swiper-navigation-size: 16px !important;
+  --swiper-navigation-color: #FFFFFF;
 }
 
 #toggle-navigation {
@@ -46,6 +47,11 @@
   }
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  @apply bg-green !w-8 !h-8 !relative !left-auto !right-auto;
+
+}
 html {
   @apply !mt-0;
 }

@@ -175,9 +175,9 @@ get_header();
 <section>
   <div class="bg-white text-black py-16 space-y-20">
     <?php get_template_part('components/marquee', null, array('title' => 'Casos de éxito')); ?>
-    <div class="w-11/12 max-w-screen-lg mx-auto">
-      <div class="grid md:grid-cols-2">
-        <div class="relative">
+    <div class="w-11/12 max-w-screen-lg mx-auto space-y-16">
+      <div class="flex items-start justify-between">
+        <div class="md:basis-4/12 relative">
           <h2 class="text-green uppercase md:absolute md:bottom-full md:pb-2">Casos de éxito</h2>
           <h2 class="text-32 font-semibold leading-none">La solución TI
           que tu empresa necesita</h2>
@@ -187,14 +187,20 @@ get_header();
           <div class="swiper-button-next"></div>
         </div>
       </div>
-      <div class="w-11/12 max-w-screen-lg mx-auto">
-      <div class="swiper">
+      <div class="swiper swiper-casos-exito">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
+        <?php for ($x = 0; $x <= 10; $x++) { ?>
+          <div class="swiper-slide">
+            <div class="rounded-3xl bg-light-grey p-5 space-y-6">
+              <figure class="rounded-full bg-dark-grey w-28 h-28"></figure>
+              <p>Shadow undo object edit link ellipse mask distribute asset. Inspect team strikethrough rectangle asset horizontal pencil undo slice. Clip comment bold.</p>
+              <p class="text-18">
+                <span class="font-semibold">Gabriela Sánchez</span>, Innovate
+              </p>
+            </div>
+          </div>
+        <?php } ?>
         </div>
-      </div>
       </div>
     </div>
   </div>

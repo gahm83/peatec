@@ -1,13 +1,23 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-//Swiper Hero
+//Sliders
 const slideServicios = new Swiper('.swiper-servicios', {
   slidesPerView: 4,
   loop: true,
   autoplay: true,
   delay: 2500
 });
+
+const slideCasosExito = new Swiper('.swiper-casos-exito', {
+  slidesPerView: 3,
+  loop: true,
+  autoplay: true,
+  delay: 2500,
+  spaceBetween: 24,
+});
+
+
 
 const marquees = document.querySelectorAll('.marquee-item');
 marquees.forEach(marqueeString => {
