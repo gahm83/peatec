@@ -27,8 +27,8 @@ marquees.forEach(marqueeString => {
   let repeatCount = Math.floor(viewportWidth / stringWidth);
   if (repeatCount <= 1) {
     repeatCount = Math.floor((viewportWidth * 2) / stringWidth);
-    marqueeContainer.classList.remove('twcss-basis-screen');
-    marqueeContainer.classList.add('twcss-basis-screen2x');
+    marqueeContainer.classList.remove('basis-screen');
+    marqueeContainer.classList.add('basis-screen2x');
   }
   for (let i = 1; i < repeatCount; i++) {
     const clone = marqueeString.cloneNode(true);
