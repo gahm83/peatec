@@ -13,7 +13,7 @@ $custom_logo_url = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 ?>
   </main>
 	<footer id="colophon" class="relative">
-    <div class="max-w-screen-lg lg:w-11/12 mx-auto pt-16 pb-20 space-y-16">
+    <div class="w-11/12 max-w-screen-lg mx-auto pt-16 pb-20 space-y-16">
       <div class="flex justify-between">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?= $custom_logo_url[0]; ?>" /></a>
         <nav class="flex items-center space-x-5">

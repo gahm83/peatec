@@ -1,5 +1,5 @@
 
-<div class="flex flex-nowrap animate-marquee">
+<div class="flex flex-nowrap animate-marquee max-w-full">
   <div class="flex justify-around basis-full shrink-0">
     <div class="marquee-item">
       <div class="flex items-center space-x-8 px-8">

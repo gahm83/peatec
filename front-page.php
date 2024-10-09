@@ -99,10 +99,10 @@ get_header();
           <h4 class="uppercase md:absolute md:bottom-full md:pb-2">Clientes</h4>
           <h2 class="text-32 font-semibold leading-none">Soluciones TIC de Vanguardia</h2>
         </div>
-        <div class="md:col-span-6 md:col-start-7 aspect-square grid grid-cols-3">
+        <div class="md:col-span-6 md:col-start-7 grid grid-cols-3">
           <?php for ($x = 1; $x <= 9; $x++) { ?>
-          <figure class="flex items-center justify-center">
-            <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/images/clientes/cliente-0'. $x . '.jpg' ); ?>" alt="" />
+          <figure class="flex items-center justify-center aspect-square">
+            <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/images/clientes/cliente-0'. $x . '.jpg' ); ?>" alt="" class="w-36" />
           </figure>
           <?php } ?>
         </div>
@@ -165,6 +165,12 @@ get_header();
             <div class="flex flex-col items-center text-center w-36 mx-auto space-y-4">
               <?php get_template_part('assets/perifericos'); ?>
               <span>Periféricos</span>
+            </div>
+          </a>
+          <a class="swiper-slide">
+            <div class="flex flex-col items-center text-center w-36 mx-auto space-y-4">
+              <?php get_template_part('assets/cableado-estructurado'); ?>
+              <span>Cableado Estructurado</span>
             </div>
           </a>
           <a class="swiper-slide">

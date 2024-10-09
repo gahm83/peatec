@@ -10,73 +10,12 @@
 get_header();
 ?>
 <section>
-  <div class="relative">
-    <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/images/bg-hero.jpg' ); ?>" alt="" class="absolute w-full h-full object-cover">
-    <div class="relative w-11/12 max-w-screen-lg mx-auto pt-72">
-      <div class="grid gap-y-8 md:grid-cols-12 place-items-end">
-        <div class="md:col-span-6 space-y-5">
-          <h1 class="text-20 lg:text-24 leading-none">#InnovamosTuEntornoDigital</h2>
-          <h1 class="text-36 lg:text-64 leading-none uppercase">Soluciones Integrales en tecnologías de la información</h1>
-        </div>
-        <div class="md:col-span-6 space-y-8">
-          <p>Desde la implementación de infraestructuras tecnológicas robustas hasta la integración de sistemas complejos, nuestro compromiso es claro: ser un socio confiable y estratégico en cada paso del camino</p>
-          <a href="" class="flex items-center justify-center bg-blue w-40 h-10 uppercase">Contacto</a>
-        </div>
-      </div>
-      <div class="grid grid-cols-12 bg-gradient-to-b from-blue to-green rounded-3xl md:rounded-[100px] py-12 mt-16 md:mt-32">
-        <div class="col-span-10 col-start-2 flex flex-col items-center md:flex-row md:justify-between space-y-8 md:space-y-0">
-          <div class="flex items-center space-x-4 max-w-[300px]">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="shrink-0">
-              <path d="M10.666 4.534V3.48C10.666 1.48 11.866 0 14.666 0C17.466 0 18.666 1.48 18.666 3.48V4.534C18.666 6.52 17.466 8 14.666 8C11.88 8 10.666 6.52 10.666 4.534ZM21.334 4.534V3.48C21.334 1.48 22.534 0 25.334 0C28.134 0 29.334 1.48 29.334 3.48V4.534C29.334 6.52 28.134 8 25.334 8C22.546 8 21.334 6.52 21.334 4.534ZM32 14.134V15.2C32 17.2 33.2 18.666 36 18.666C38.8 18.666 40 17.2 40 15.2V14.134C40 12.134 38.786 10.666 36 10.666C33.2 10.666 32 12.134 32 14.134ZM32 24.8V25.866C32 27.866 33.2 29.334 36 29.334C38.8 29.334 40 27.866 40 25.866V24.8C40 22.8 38.786 21.334 36 21.334C33.2 21.334 32 22.8 32 24.8ZM21.334 14.134V15.2C21.334 17.2 22.546 18.666 25.334 18.666C28.134 18.666 29.334 17.2 29.334 15.2V14.134C29.334 12.134 28.134 10.666 25.334 10.666C22.534 10.666 21.334 12.134 21.334 14.134ZM21.334 25.866V24.8C21.334 22.8 22.534 21.334 25.334 21.334C28.134 21.334 29.334 22.8 29.334 24.8V25.866C29.334 27.866 28.134 29.334 25.334 29.334C22.546 29.334 21.334 27.866 21.334 25.866ZM21.334 35.466V36.534C21.334 38.534 22.546 40 25.334 40C28.134 40 29.334 38.534 29.334 36.534V35.466C29.334 33.466 28.134 32 25.334 32C22.534 32 21.334 33.466 21.334 35.466ZM10.666 14.134V15.2C10.666 17.2 11.88 18.666 14.666 18.666C17.466 18.666 18.666 17.2 18.666 15.2V14.134C18.666 12.134 17.466 10.666 14.666 10.666C11.866 10.666 10.666 12.134 10.666 14.134ZM10.666 25.866V24.8C10.666 22.8 11.866 21.334 14.666 21.334C17.466 21.334 18.666 22.8 18.666 24.8V25.866C18.666 27.866 17.466 29.334 14.666 29.334C11.88 29.334 10.666 27.866 10.666 25.866ZM10.666 35.466V36.534C10.666 38.534 11.88 40 14.666 40C17.466 40 18.666 38.534 18.666 36.534V35.466C18.666 33.466 17.466 32 14.666 32C11.866 32 10.666 33.466 10.666 35.466ZM0 15.2V14.134C0 12.134 1.2 10.666 4 10.666C6.8 10.666 8 12.134 8 14.134V15.2C8 17.2 6.8 18.666 4 18.666C1.214 18.666 0 17.2 0 15.2ZM0 24.8V25.866C0 27.866 1.214 29.334 4 29.334C6.8 29.334 8 27.866 8 25.866V24.8C8 22.8 6.8 21.334 4 21.334C1.2 21.334 0 22.8 0 24.8Z" fill="white"/>
-            </svg>
-            <div class="space-y-2">
-              <h2 class="text-24 font-bold leading-none">Stock</h2>
-              <p>Disponibilidad de stock sobre producto ofertado.</p>
-            </div>
-          </div>
-          <div class="flex items-center space-x-4 max-w-[300px]">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="shrink-0">
-              <path d="M3.63629 23.6365C5.6446 23.6365 7.27265 22.0084 7.27265 20.0001C7.27265 17.9918 5.6446 16.3638 3.63629 16.3638C1.62798 16.3638 -7.62939e-05 17.9918 -7.62939e-05 20.0001C-7.62939e-05 22.0084 1.62798 23.6365 3.63629 23.6365Z" fill="white"/>
-              <path d="M36.3636 23.6365C38.3719 23.6365 39.9999 22.0084 39.9999 20.0001C39.9999 17.9918 38.3719 16.3638 36.3636 16.3638C34.3553 16.3638 32.7272 17.9918 32.7272 20.0001C32.7272 22.0084 34.3553 23.6365 36.3636 23.6365Z" fill="white"/>
-              <path d="M19.9998 40.0003C22.0081 40.0003 23.6362 38.3722 23.6362 36.3639C23.6362 34.3556 22.0081 32.7275 19.9998 32.7275C17.9915 32.7275 16.3634 34.3556 16.3634 36.3639C16.3634 38.3722 17.9915 40.0003 19.9998 40.0003Z" fill="white"/>
-              <path d="M19.9999 7.27297C22.0082 7.27297 23.6363 5.64492 23.6363 3.63661C23.6363 1.6283 22.0082 0.000244141 19.9999 0.000244141C17.9916 0.000244141 16.3636 1.6283 16.3636 3.63661C16.3636 5.64492 17.9916 7.27297 19.9999 7.27297Z" fill="white"/>
-              <path d="M8.43609 12.0728C10.4444 12.0728 12.0725 10.4447 12.0725 8.43641C12.0725 6.4281 10.4444 4.80005 8.43609 4.80005C6.42778 4.80005 4.79973 6.4281 4.79973 8.43641C4.79973 10.4447 6.42778 12.0728 8.43609 12.0728Z" fill="white"/>
-              <path d="M31.5638 35.2005C33.5721 35.2005 35.2001 33.5724 35.2001 31.5641C35.2001 29.5558 33.5721 27.9277 31.5638 27.9277C29.5555 27.9277 27.9274 29.5558 27.9274 31.5641C27.9274 33.5724 29.5555 35.2005 31.5638 35.2005Z" fill="white"/>
-              <path d="M8.43609 35.2005C10.4444 35.2005 12.0725 33.5724 12.0725 31.5641C12.0725 29.5558 10.4444 27.9277 8.43609 27.9277C6.42778 27.9277 4.79973 29.5558 4.79973 31.5641C4.79973 33.5724 6.42778 35.2005 8.43609 35.2005Z" fill="white"/>
-              <path d="M31.5638 12.0728C33.5721 12.0728 35.2001 10.4447 35.2001 8.43641C35.2001 6.4281 33.5721 4.80005 31.5638 4.80005C29.5555 4.80005 27.9274 6.4281 27.9274 8.43641C27.9274 10.4447 29.5555 12.0728 31.5638 12.0728Z" fill="white"/>
-            </svg>
-            <div class="space-y-2">
-              <h2 class="text-24 font-bold leading-none">Partners</h2>
-              <p>Distribuimos las mejores marcas de TI</p>
-            </div>
-          </div>
-          <div class="flex items-center space-x-4 max-w-[300px]">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="shrink-0">
-              <path d="M15 7.5C15 4.73875 17.2387 2.5 20 2.5C22.7613 2.5 25 4.73875 25 7.5C25 10.2613 22.7613 12.5 20 12.5C17.2387 12.5 15 10.2613 15 7.5Z" fill="white"/>
-              <path d="M15 20C15 17.2387 17.2387 15 20 15C22.7613 15 25 17.2387 25 20C25 22.7613 22.7613 25 20 25C17.2387 25 15 22.7613 15 20Z" fill="white"/>
-              <path d="M15 32.5C15 29.7387 17.2387 27.5 20 27.5C22.7613 27.5 25 29.7387 25 32.5C25 35.2613 22.7613 37.5 20 37.5C17.2387 37.5 15 35.2613 15 32.5Z" fill="white"/>
-              <path d="M2.5 7.5C2.5 4.73875 4.73875 2.5 7.5 2.5C10.2613 2.5 12.5 4.73875 12.5 7.5C12.5 10.2613 10.2613 12.5 7.5 12.5C4.73875 12.5 2.5 10.2613 2.5 7.5Z" fill="white"/>
-              <path d="M2.5 20C2.5 17.2387 4.73875 15 7.5 15C10.2613 15 12.5 17.2387 12.5 20C12.5 22.7613 10.2613 25 7.5 25C4.73875 25 2.5 22.7613 2.5 20Z" fill="white"/>
-              <path d="M2.5 32.5C2.5 29.7387 4.73875 27.5 7.5 27.5C10.2613 27.5 12.5 29.7387 12.5 32.5C12.5 35.2613 10.2613 37.5 7.5 37.5C4.73875 37.5 2.5 35.2613 2.5 32.5Z" fill="white"/>
-              <path d="M27.5 7.5C27.5 4.73875 29.7387 2.5 32.5 2.5C35.2613 2.5 37.5 4.73875 37.5 7.5C37.5 10.2613 35.2613 12.5 32.5 12.5C29.7387 12.5 27.5 10.2613 27.5 7.5Z" fill="white"/>
-              <path d="M37.5 20C37.5 22.7613 35.2613 25 32.5 25C29.7387 25 27.5 22.7613 27.5 20C27.5 17.2387 29.7387 15 32.5 15C35.2613 15 37.5 17.2387 37.5 20Z" fill="white"/>
-              <path d="M37.5 32.5C37.5 35.2613 35.2613 37.5 32.5 37.5C29.7387 37.5 27.5 35.2613 27.5 32.5C27.5 29.7387 29.7387 27.5 32.5 27.5C35.2613 27.5 37.5 29.7387 37.5 32.5Z" fill="white"/>
-            </svg>
-  
-            <div class="space-y-2">
-              <h2 class="text-24 font-bold leading-none">Portafolio</h2>
-              <p>Amplio portafolio de productos y soluciones.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="aspect-[3/1] bg-green">
   </div>
 </section>
 
 <section>
-  <div class="py-52 space-y-32">
-    <?php get_template_part('components/marquee', null, array('title' => 'enfoque')); ?>
+  <div class="py-24 space-y-16">
     <div class="w-11/12 max-w-screen-lg mx-auto">
       <div class="grid md:grid-cols-12">
         <div class="relative md:col-span-4">
@@ -84,124 +23,55 @@ get_header();
           <h2 class="text-32 font-semibold leading-none">Innovación constante desde 2020</h2>
         </div>
         <div class="md:col-span-7 md:col-start-6">
-          <p>Desde nuestra fundación en 2020, hemos combinado la energía y la innovación de un equipo joven con la experiencia y sabiduría de profesionales que llevan más de una década transformando el sector. Este equilibrio nos permite ofrecer soluciones integrales que no solo responden a las necesidades actuales de nuestros clientes, sino que también anticipan los desafíos futuros.</p>
+          <p>Nos enfocamos en optimizar servicios y entregar productos de calidad a la altura de diferentes verticales de negocio, buscando siempre que nuestros aliados comerciales generen ahorro, confianza y satisfacción en cada uno de los proyectos, servicios y productos que se trabajan en conjunto.</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="overflow-hidden relative">
-  <div class="bg-white before:absolute before:content-[''] before:block before:w-screen before:h-screen before:bg-green before:origin-top-right before:top-1/2 before:right-1/2 before:rotate-45 before:-translate-x-12">
-    <div class="w-11/12 max-w-screen-lg mx-auto">
-      <div class="grid grid-cols-12">
-        <div class="relative md:col-span-4 place-self-center">
-          <h4 class="uppercase md:absolute md:bottom-full md:pb-2">Clientes</h4>
-          <h2 class="text-32 font-semibold leading-none">Soluciones TIC de Vanguardia</h2>
-        </div>
-        <div class="md:col-span-6 md:col-start-7 aspect-square grid grid-cols-3">
-          <?php for ($x = 1; $x <= 9; $x++) { ?>
-          <figure class="flex items-center justify-center">
-            <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/images/clientes/cliente-0'. $x . '.jpg' ); ?>" alt="" />
-          </figure>
-          <?php } ?>
-        </div>
-      </div>
-    </div>
+    <?php get_template_part('components/marquee', null, array('title' => 'Innovación')); ?>
   </div>
 </section>
 
 <section>
-  <div class="py-52">
-    <div class="w-11/12 max-w-screen-lg mx-auto space-y-32">
-      <div class="grid md:grid-cols-12">
-        <div class="relative md:col-span-4">
-          <h2 class="text-green uppercase md:absolute md:bottom-full md:pb-2">Servicios</h2>
-          <h2 class="text-32 font-semibold leading-none">Soluciones TIC de Vanguardia</h2>
+  <div class="relative bg-white before:absolute before:content-[''] before:block before:w-1/2 before:h-full before:bg-blue before:top-0 before:right-1/2">
+    <div class="w-11/12 max-w-screen-lg mx-auto py-40">
+      <div class="relative grid md:grid-cols-12">
+        <div class="md:col-span-5 space-y-14">
+          <div class="relative pl-24">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0">
+              <path d="M7.63115 8.10156L5.03206 8.30236C4.30885 8.35826 3.66473 8.7373 3.26477 9.34227L0.267317 13.8758C-0.0360202 14.3345 -0.0842425 14.9087 0.138236 15.4117C0.360774 15.9146 0.818094 16.2651 1.36155 16.3493L3.74131 16.7179C4.29801 13.7636 5.63065 10.8166 7.63115 8.10156Z" fill="white"/>
+              <path d="M13.282 26.2586L13.6506 28.6384C13.7348 29.1818 14.0853 29.6391 14.5882 29.8616C14.7974 29.9542 15.0189 29.9999 15.2393 29.9999C15.5488 29.9999 15.8562 29.9097 16.1242 29.7325L20.6578 26.7351C21.2627 26.3351 21.6418 25.691 21.6976 24.9679L21.8984 22.3688C19.1833 24.3693 16.2363 25.702 13.282 26.2586Z" fill="white"/>
+              <path d="M12.3871 24.6092C12.4697 24.6092 12.5528 24.6024 12.6357 24.5885C13.8734 24.3816 15.0664 24.033 16.2044 23.5766L6.4234 13.7957C5.96708 14.9336 5.61845 16.1266 5.4115 17.3643C5.32993 17.8522 5.49359 18.3493 5.84333 18.6991L11.3009 24.1567C11.5913 24.447 11.9833 24.6092 12.3871 24.6092Z" fill="white"/>
+              <path d="M27.6079 13.3009C30.0014 8.67351 30.09 3.78354 29.9649 1.4902C29.9221 0.704409 29.2956 0.0779291 28.5098 0.0350974C28.1363 0.0147069 27.6938 0 27.195 0C24.6306 0 20.573 0.388415 16.6991 2.39213C13.6205 3.98452 9.5836 7.4908 7.2019 12.0987C7.23003 12.1207 7.25751 12.144 7.28341 12.1699L17.8302 22.7167C17.8561 22.7426 17.8794 22.77 17.9013 22.7981C22.5092 20.4164 26.0155 16.3795 27.6079 13.3009ZM17.4431 6.34214C19.1565 4.62881 21.9444 4.62864 23.6578 6.34214C24.4879 7.17211 24.9449 8.27572 24.9449 9.44952C24.9449 10.6233 24.4879 11.7269 23.6578 12.5569C22.8013 13.4135 21.6757 13.8418 20.5505 13.842C19.425 13.842 18.2999 13.4137 17.4431 12.5569C16.6131 11.7269 16.156 10.6233 16.156 9.44952C16.156 8.27572 16.6131 7.17211 17.4431 6.34214Z" fill="white"/>
+              <path d="M18.6861 11.314C19.7141 12.342 21.387 12.3421 22.415 11.314C22.913 10.8159 23.1873 10.1538 23.1873 9.44952C23.1873 8.74522 22.913 8.08311 22.415 7.58512C21.901 7.07108 21.2258 6.81409 20.5505 6.81409C19.8754 6.81409 19.2001 7.07108 18.6861 7.58512C18.1882 8.08311 17.9138 8.74522 17.9138 9.44952C17.9138 10.1538 18.1881 10.816 18.6861 11.314Z" fill="white"/>
+              <path d="M0.896758 24.7228C1.1217 24.7228 1.34664 24.637 1.5182 24.4654L4.38772 21.5958C4.73096 21.2526 4.73096 20.6961 4.38772 20.3529C4.04453 20.0096 3.48801 20.0096 3.14477 20.3529L0.275254 23.2224C-0.0679883 23.5656 -0.0679883 24.1221 0.275254 24.4654C0.446875 24.637 0.671816 24.7228 0.896758 24.7228Z" fill="white"/>
+              <path d="M7.01752 22.9825C6.67434 22.6393 6.11781 22.6393 5.77457 22.9825L0.257676 28.4994C-0.0855664 28.8427 -0.0855664 29.3991 0.257676 29.7424C0.429297 29.914 0.654238 29.9998 0.87918 29.9998C1.10412 29.9998 1.32906 29.914 1.50063 29.7423L7.01746 24.2255C7.36076 23.8822 7.36076 23.3258 7.01752 22.9825Z" fill="white"/>
+              <path d="M8.40423 25.6123L5.53478 28.4818C5.19153 28.825 5.19153 29.3815 5.53478 29.7248C5.7064 29.8964 5.93134 29.9822 6.15622 29.9822C6.3811 29.9822 6.6061 29.8964 6.77767 29.7248L9.64718 26.8552C9.99042 26.512 9.99042 25.9555 9.64718 25.6123C9.30399 25.269 8.74747 25.269 8.40423 25.6123Z" fill="white"/>
+            </svg>
+            <h2 class="font-bold text-24 mb-5">Misión</h2>
+            <p>Innovar a diario nuestra oferta comercial en el mundo TI, para marcar la diferencia en las necesidades de los diferentes sectores de negocios, industrias y personales.</p>
+          </div>
+          <div class="relative pl-24">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M24.4445 0.106852C24.7015 0.213295 24.9211 0.393562 25.0757 0.624852C25.2302 0.856142 25.3127 1.12806 25.3126 1.40623V4.68748H28.5939C28.8718 4.68772 29.1435 4.77033 29.3745 4.92487C29.6055 5.0794 29.7856 5.29894 29.8919 5.55575C29.9982 5.81255 30.0261 6.09511 29.9719 6.36773C29.9178 6.64036 29.784 6.89081 29.5876 7.08748L23.9626 12.7125C23.6992 12.9763 23.3417 13.1246 22.9689 13.125H22.262C22.6343 14.5673 22.5687 16.0878 22.0736 17.4927C21.5784 18.8976 20.6761 20.1232 19.4817 21.0133C18.2873 21.9035 16.8549 22.4178 15.3671 22.4907C13.8793 22.5636 12.4035 22.1918 11.1278 21.4227C9.85207 20.6536 8.83428 19.522 8.20416 18.1723C7.57403 16.8225 7.3601 15.3157 7.58965 13.8439C7.8192 12.3721 8.48182 11.002 9.49305 9.9082C10.5043 8.81443 11.8183 8.04656 13.2676 7.70248C13.6306 7.6162 14.0131 7.67766 14.3308 7.87334C14.6485 8.06903 14.8754 8.3829 14.9617 8.74591C15.048 9.10893 14.9865 9.49135 14.7908 9.80905C14.5951 10.1267 14.2813 10.3537 13.9182 10.44C12.9812 10.6618 12.1353 11.1669 11.4954 11.8865C10.8555 12.6061 10.4528 13.5053 10.342 14.4618C10.2311 15.4183 10.4176 16.3858 10.8759 17.2326C11.3343 18.0794 12.0423 18.7646 12.9037 19.1949C13.7652 19.6251 14.7383 19.7797 15.6906 19.6374C16.643 19.4952 17.5285 19.0632 18.2266 18.4C18.9248 17.7368 19.4018 16.8747 19.5927 15.9309C19.7837 14.9871 19.6793 14.0074 19.2939 13.125H18.8626L15.9939 15.9937C15.8651 16.1319 15.7099 16.2427 15.5374 16.3196C15.3649 16.3964 15.1787 16.4378 14.9899 16.4411C14.801 16.4444 14.6135 16.4097 14.4384 16.339C14.2633 16.2682 14.1042 16.163 13.9707 16.0294C13.8371 15.8959 13.7319 15.7368 13.6611 15.5617C13.5904 15.3866 13.5557 15.1991 13.559 15.0102C13.5623 14.8214 13.6037 14.6352 13.6805 14.4627C13.7574 14.2902 13.8682 14.135 14.0064 14.0062L16.8751 11.1375V7.03123C16.8754 6.65839 17.0238 6.30095 17.2876 6.03748L22.9126 0.412477C23.1091 0.215805 23.3596 0.0818029 23.6322 0.0274046C23.9049 -0.0269937 24.1875 0.000653195 24.4445 0.106852ZM19.6876 7.61435V10.3125H22.3876L25.2001 7.49998H22.5001V4.79998L19.6876 7.61435ZM9.03762 4.36873C11.2337 3.13687 13.7575 2.61548 16.262 2.87623C16.4457 2.89531 16.6313 2.87803 16.8083 2.82536C16.9853 2.7727 17.1502 2.68569 17.2936 2.56929C17.437 2.4529 17.5561 2.30941 17.644 2.14701C17.7319 1.9846 17.787 1.80648 17.8061 1.62279C17.8251 1.4391 17.8079 1.25346 17.7552 1.07645C17.7025 0.899442 17.6155 0.734542 17.4991 0.591162C17.3827 0.447783 17.2392 0.328733 17.0768 0.240809C16.9144 0.152885 16.7363 0.0978092 16.5526 0.0787265C13.4699 -0.242032 10.3635 0.400021 7.66047 1.91661C4.95748 3.4332 2.79065 5.74985 1.45788 8.54805C0.125122 11.3463 -0.308124 14.4886 0.217713 17.5431C0.74355 20.5975 2.20265 23.4141 4.3944 25.6055C6.58615 27.797 9.40293 29.2557 12.4575 29.7811C15.512 30.3065 18.6543 29.8728 21.4523 28.5396C24.2503 27.2065 26.5667 25.0393 28.0829 22.3361C29.5991 19.6329 30.2407 16.5264 29.9195 13.4437C29.9004 13.26 29.8453 13.0819 29.7574 12.9195C29.6695 12.7571 29.5504 12.6136 29.4071 12.4972C29.2637 12.3808 29.0988 12.2938 28.9218 12.2412C28.7448 12.1885 28.5591 12.1712 28.3754 12.1903C28.1917 12.2094 28.0136 12.2644 27.8512 12.3524C27.6888 12.4403 27.5453 12.5593 27.4289 12.7027C27.3125 12.8461 27.2255 13.011 27.1729 13.188C27.1202 13.365 27.1029 13.5507 27.122 13.7344C27.3504 15.922 26.9825 18.1306 26.0573 20.1261C25.1322 22.1216 23.6843 23.8295 21.8671 25.0688C20.0499 26.308 17.9313 27.0324 15.7358 27.1651C13.5403 27.2979 11.3498 26.8339 9.39655 25.8226C7.44333 24.8113 5.80022 23.2902 4.64143 21.4207C3.48264 19.5512 2.85138 17.4029 2.81458 15.2037C2.77778 13.0045 3.33682 10.8364 4.43242 8.92913C5.52802 7.0219 7.11933 5.44672 9.03762 4.3706V4.36873Z" fill="white"/>
+            </svg>
+            <h2 class="font-bold text-24 mb-5">Visión</h2>
+            <p>Cumplir, cubrir y satisfacer las necesidades del mundo digital de nuestros socios comerciales donde apliquen las TIC.</p>
+          </div>
+          <div class="relative pl-24">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0">
+              <path d="M29.3039 18.9632C28.8943 17.6586 28.3167 16.3271 27.5923 15C28.3167 13.6728 28.8943 12.3414 29.3039 11.0367C29.7937 9.44874 30.0213 8.09926 29.9945 6.66455C29.9459 4.69756 29.3191 3.05626 28.1306 1.86833C26.1431 -0.119748 22.8869 -0.536226 18.9622 0.695047C17.6572 1.1045 16.3263 1.68147 14.999 2.40606C13.6716 1.68147 12.3408 1.1045 11.0357 0.695047C7.1111 -0.536226 3.85543 -0.119748 1.86735 1.86833C-0.120725 3.85582 -0.537202 7.11208 0.694071 11.0367C1.10369 12.3414 1.68126 13.6728 2.40567 15C1.68126 16.3271 1.10369 17.6586 0.694071 18.9632C-0.537202 22.8878 -0.120725 26.1441 1.86735 28.1316C3.10565 29.3705 4.83658 29.999 6.91487 29.999C8.17191 29.999 9.55666 29.7688 11.0357 29.3049C12.3408 28.8954 13.6716 28.3184 14.999 27.5938C16.3263 28.3184 17.6572 28.8954 18.9622 29.3049C20.4413 29.7688 21.826 29.999 23.0831 29.999C25.1614 29.999 26.8923 29.3705 28.1306 28.1316C29.4288 26.8699 30.0667 24.8814 29.9945 22.8228C29.9652 21.6355 29.7362 20.3403 29.3039 18.9632ZM19.4883 2.37209C21.116 1.87676 22.419 1.66776 23.8914 1.80331C25.1438 1.93452 26.1525 2.37443 26.8882 3.11073C27.6245 3.84645 28.0644 4.85513 28.1956 6.10749C28.3309 7.39558 28.14 8.87698 27.6268 10.5107C27.3465 11.404 26.9792 12.3127 26.5338 13.2249C25.3309 11.366 23.8526 9.54346 22.1541 7.84486C20.4552 6.14604 18.6327 4.66816 16.7738 3.46524C17.686 3.01976 18.5947 2.65255 19.4883 2.37209ZM2.37111 10.5107C1.85798 8.87698 1.66702 7.39558 1.80233 6.10749C1.93354 4.85513 2.37345 3.84645 3.10976 3.11073C3.84547 2.37443 4.85416 1.93452 6.10652 1.80331C7.57813 1.66771 8.88268 1.87682 10.5097 2.37209C11.4033 2.65255 12.312 3.01976 13.2242 3.46529C11.3653 4.66822 9.54272 6.14604 7.84389 7.84492C6.14529 9.54352 4.66706 11.3661 3.46414 13.225C3.01873 12.3127 2.65145 11.404 2.37111 10.5107ZM10.5097 27.6278C8.876 28.1409 7.39461 28.3319 6.10652 28.1966C4.85416 28.0654 3.84547 27.6255 3.10976 26.8892C2.37345 26.1535 1.93354 25.1448 1.80233 23.8924C1.66702 22.6043 1.85798 21.1229 2.37111 19.4892C2.65145 18.5959 3.01873 17.6873 3.46414 16.775C4.66706 18.6339 6.14529 20.4564 7.84389 22.155C9.54272 23.8539 11.3653 25.3317 13.2242 26.5346C12.3119 26.9801 11.4033 27.3474 10.5097 27.6278ZM9.08629 20.9126C7.22134 19.0477 5.64113 17.0336 4.42743 15C5.64113 12.9663 7.22134 10.9522 9.08629 9.08727C10.9514 7.2222 12.9652 5.64123 14.999 4.42811C17.0327 5.64123 19.0466 7.2222 20.9117 9.08727C22.7766 10.9522 24.3568 12.9663 25.5705 15C24.3568 17.0336 22.7766 19.0477 20.9117 20.9126C19.0466 22.7777 17.0327 24.3587 14.999 25.5718C12.9652 24.3587 10.9514 22.7777 9.08629 20.9126ZM28.1956 23.8924C28.0644 25.1448 27.6245 26.1535 26.8882 26.8892C26.1525 27.6255 25.1438 28.0654 23.8914 28.1966C22.6033 28.3319 21.122 28.1409 19.4883 27.6278C18.5947 27.3474 17.686 26.9801 16.7738 26.5346C18.6327 25.3317 20.4552 23.8539 22.1541 22.155C23.8526 20.4564 25.3309 18.6339 26.5338 16.775C26.9792 17.6873 27.3465 18.5959 27.6268 19.4892C28.14 21.1229 28.3309 22.6043 28.1956 23.8924Z" fill="white"/>
+              <path d="M20.365 11.4273C18.8736 9.92737 16.4115 10.0107 14.9989 11.5744C14.2852 10.799 13.3005 10.3413 12.2423 10.3466C11.2564 10.3466 10.3297 10.7309 9.63269 11.4273C8.19405 12.8666 8.19405 15.2078 9.63269 16.6465L14.3738 21.3871C14.7142 21.7277 15.2807 21.7329 15.6239 21.3871L20.365 16.6465C21.0843 15.9272 21.444 14.9823 21.444 14.0369C21.444 13.0921 21.0843 12.1472 20.365 11.4273Z" fill="white"/>
+            </svg>
+            <h2 class="font-bold text-24 mb-5">Valores</h2>
+            <p>Respeto, Lealtad, Honestidad, Responsabilidad, Compromiso.</p>
+          </div>
         </div>
-        <div class="md:col-span-7 md:col-start-6">
-          <p>Desde nuestra fundación en 2020, hemos combinado la energía y la innovación de un equipo joven con la experiencia y sabiduría de profesionales que llevan más de una década transformando el sector. Este equilibrio nos permite ofrecer soluciones integrales que no solo responden a las necesidades actuales de nuestros clientes, sino que también anticipan los desafíos futuros.</p>
-        </div>
-      </div>
-      <div class="swiper swiper-servicios">
-        <div class="swiper-wrapper">
-          <a class="swiper-slide">
-            <div class="flex flex-col items-center text-center w-36 mx-auto space-y-4">
-              <?php get_template_part('assets/computo'); ?>
-              <span>Cómputo</span>
-            </div>
-          </a>
-          <a class="swiper-slide">
-            <div class="flex flex-col items-center text-center w-36 mx-auto space-y-4">
-              <?php get_template_part('assets/impresion'); ?>
-              <span>Impresión</span>
-            </div>
-          </a>
-          <a class="swiper-slide">
-            <div class="flex flex-col items-center text-center w-36 mx-auto space-y-4">
-              <?php get_template_part('assets/software-licencias'); ?>
-              <span>Software y Licencias</span>
-            </div>
-          </a>
-          <a class="swiper-slide">
-            <div class="flex flex-col items-center text-center w-36 mx-auto space-y-4">
-              <?php get_template_part('assets/data-center'); ?>
-              <span>Datacenter</span>
-            </div>
-          </a>
-          <a class="swiper-slide">
-            <div class="flex flex-col items-center text-center w-36 mx-auto space-y-4">
-              <?php get_template_part('assets/seguridad-fisica'); ?>
-              <span>Seguridad física</span>
-            </div>
-          </a>
-          <a class="swiper-slide">
-            <div class="flex flex-col items-center text-center w-36 mx-auto space-y-4">
-              <?php get_template_part('assets/seguridad-logica'); ?>
-              <span>Seguridad lógica</span>
-            </div>
-          </a>
-          <a class="swiper-slide">
-            <div class="flex flex-col items-center text-center w-36 mx-auto space-y-4">
-              <?php get_template_part('assets/perifericos'); ?>
-              <span>Periféricos</span>
-            </div>
-          </a>
-          <a class="swiper-slide">
-            <div class="flex flex-col items-center text-center w-36 mx-auto space-y-4">
-              <?php get_template_part('assets/consultoria-ti'); ?>
-              <span>Consultoría TI</span>
-            </div>
-          </a>
-          <a class="swiper-slide">
-            <div class="flex flex-col items-center text-center w-36 mx-auto space-y-4">
-              <?php get_template_part('assets/virtualizacion'); ?>
-              <span>Virtualización</span>
-            </div>
-          </a>
-          <a class="swiper-slide">
-            <div class="flex flex-col items-center text-center w-36 mx-auto space-y-4">
-              <?php get_template_part('assets/telefonia'); ?>
-              <span>Telefonía</span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="bg-white py-16">
-    <div class="flex flex-nowrap animate-marquee">
-      <div class="flex justify-around basis-full shrink-0">
-        <div class="marquee-item">
-          <div class="flex items-center space-x-8 px-8">
-          <?php for ($x = 1; $x <= 14; $x++) { ?>
-          <figure class="flex items-center justify-center">
-            <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/images/logos/logo-0' . str_pad($x, 2, '0', STR_PAD_LEFT) . '.jpg' ); ?>" alt="" />
-          </figure>
-          <?php } ?>
+        <div class="md:col-span-6 md:col-start-7 flex items-center justify-center">
+          <div class="grid grid-cols-2 gap-6 w-8/12 rotate-45 translate-x-16">
+            <figure class="aspect-square bg-black"></figure>
+            <figure class="aspect-square bg-black"></figure>
+            <figure class="aspect-square bg-black"></figure>
+            <figure class="aspect-square bg-black"></figure>
           </div>
         </div>
       </div>
@@ -210,46 +80,64 @@ get_header();
 </section>
 
 <section>
-  <div class="relative bg-gradient-to-r from-[#42A5FE] via-[#344DC8] to-[#276398]">
-    <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/images/bg-banner.png' ); ?>" alt="" class="absolute w-full h-full object-cover">
+  <div class="relative w-11/12 max-w-screen-lg mx-auto">
+    <div class="grid grid-cols-12 py-32">
+      <div class="col-span-10 col-start-2 flex flex-col items-center md:flex-row md:justify-between space-y-8 md:space-y-0">
+        <div class="flex items-center space-x-4 max-w-[300px]">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="shrink-0">
+            <path d="M10.666 4.534V3.48C10.666 1.48 11.866 0 14.666 0C17.466 0 18.666 1.48 18.666 3.48V4.534C18.666 6.52 17.466 8 14.666 8C11.88 8 10.666 6.52 10.666 4.534ZM21.334 4.534V3.48C21.334 1.48 22.534 0 25.334 0C28.134 0 29.334 1.48 29.334 3.48V4.534C29.334 6.52 28.134 8 25.334 8C22.546 8 21.334 6.52 21.334 4.534ZM32 14.134V15.2C32 17.2 33.2 18.666 36 18.666C38.8 18.666 40 17.2 40 15.2V14.134C40 12.134 38.786 10.666 36 10.666C33.2 10.666 32 12.134 32 14.134ZM32 24.8V25.866C32 27.866 33.2 29.334 36 29.334C38.8 29.334 40 27.866 40 25.866V24.8C40 22.8 38.786 21.334 36 21.334C33.2 21.334 32 22.8 32 24.8ZM21.334 14.134V15.2C21.334 17.2 22.546 18.666 25.334 18.666C28.134 18.666 29.334 17.2 29.334 15.2V14.134C29.334 12.134 28.134 10.666 25.334 10.666C22.534 10.666 21.334 12.134 21.334 14.134ZM21.334 25.866V24.8C21.334 22.8 22.534 21.334 25.334 21.334C28.134 21.334 29.334 22.8 29.334 24.8V25.866C29.334 27.866 28.134 29.334 25.334 29.334C22.546 29.334 21.334 27.866 21.334 25.866ZM21.334 35.466V36.534C21.334 38.534 22.546 40 25.334 40C28.134 40 29.334 38.534 29.334 36.534V35.466C29.334 33.466 28.134 32 25.334 32C22.534 32 21.334 33.466 21.334 35.466ZM10.666 14.134V15.2C10.666 17.2 11.88 18.666 14.666 18.666C17.466 18.666 18.666 17.2 18.666 15.2V14.134C18.666 12.134 17.466 10.666 14.666 10.666C11.866 10.666 10.666 12.134 10.666 14.134ZM10.666 25.866V24.8C10.666 22.8 11.866 21.334 14.666 21.334C17.466 21.334 18.666 22.8 18.666 24.8V25.866C18.666 27.866 17.466 29.334 14.666 29.334C11.88 29.334 10.666 27.866 10.666 25.866ZM10.666 35.466V36.534C10.666 38.534 11.88 40 14.666 40C17.466 40 18.666 38.534 18.666 36.534V35.466C18.666 33.466 17.466 32 14.666 32C11.866 32 10.666 33.466 10.666 35.466ZM0 15.2V14.134C0 12.134 1.2 10.666 4 10.666C6.8 10.666 8 12.134 8 14.134V15.2C8 17.2 6.8 18.666 4 18.666C1.214 18.666 0 17.2 0 15.2ZM0 24.8V25.866C0 27.866 1.214 29.334 4 29.334C6.8 29.334 8 27.866 8 25.866V24.8C8 22.8 6.8 21.334 4 21.334C1.2 21.334 0 22.8 0 24.8Z" fill="white"/>
+          </svg>
+          <div class="space-y-2">
+            <h2 class="text-24 font-bold leading-none">Stock</h2>
+            <p>Disponibilidad de stock sobre producto ofertado.</p>
+          </div>
+        </div>
+        <div class="flex items-center space-x-4 max-w-[300px]">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="shrink-0">
+            <path d="M3.63629 23.6365C5.6446 23.6365 7.27265 22.0084 7.27265 20.0001C7.27265 17.9918 5.6446 16.3638 3.63629 16.3638C1.62798 16.3638 -7.62939e-05 17.9918 -7.62939e-05 20.0001C-7.62939e-05 22.0084 1.62798 23.6365 3.63629 23.6365Z" fill="white"/>
+            <path d="M36.3636 23.6365C38.3719 23.6365 39.9999 22.0084 39.9999 20.0001C39.9999 17.9918 38.3719 16.3638 36.3636 16.3638C34.3553 16.3638 32.7272 17.9918 32.7272 20.0001C32.7272 22.0084 34.3553 23.6365 36.3636 23.6365Z" fill="white"/>
+            <path d="M19.9998 40.0003C22.0081 40.0003 23.6362 38.3722 23.6362 36.3639C23.6362 34.3556 22.0081 32.7275 19.9998 32.7275C17.9915 32.7275 16.3634 34.3556 16.3634 36.3639C16.3634 38.3722 17.9915 40.0003 19.9998 40.0003Z" fill="white"/>
+            <path d="M19.9999 7.27297C22.0082 7.27297 23.6363 5.64492 23.6363 3.63661C23.6363 1.6283 22.0082 0.000244141 19.9999 0.000244141C17.9916 0.000244141 16.3636 1.6283 16.3636 3.63661C16.3636 5.64492 17.9916 7.27297 19.9999 7.27297Z" fill="white"/>
+            <path d="M8.43609 12.0728C10.4444 12.0728 12.0725 10.4447 12.0725 8.43641C12.0725 6.4281 10.4444 4.80005 8.43609 4.80005C6.42778 4.80005 4.79973 6.4281 4.79973 8.43641C4.79973 10.4447 6.42778 12.0728 8.43609 12.0728Z" fill="white"/>
+            <path d="M31.5638 35.2005C33.5721 35.2005 35.2001 33.5724 35.2001 31.5641C35.2001 29.5558 33.5721 27.9277 31.5638 27.9277C29.5555 27.9277 27.9274 29.5558 27.9274 31.5641C27.9274 33.5724 29.5555 35.2005 31.5638 35.2005Z" fill="white"/>
+            <path d="M8.43609 35.2005C10.4444 35.2005 12.0725 33.5724 12.0725 31.5641C12.0725 29.5558 10.4444 27.9277 8.43609 27.9277C6.42778 27.9277 4.79973 29.5558 4.79973 31.5641C4.79973 33.5724 6.42778 35.2005 8.43609 35.2005Z" fill="white"/>
+            <path d="M31.5638 12.0728C33.5721 12.0728 35.2001 10.4447 35.2001 8.43641C35.2001 6.4281 33.5721 4.80005 31.5638 4.80005C29.5555 4.80005 27.9274 6.4281 27.9274 8.43641C27.9274 10.4447 29.5555 12.0728 31.5638 12.0728Z" fill="white"/>
+          </svg>
+          <div class="space-y-2">
+            <h2 class="text-24 font-bold leading-none">Partners</h2>
+            <p>Distribuimos las mejores marcas de TI</p>
+          </div>
+        </div>
+        <div class="flex items-center space-x-4 max-w-[300px]">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="shrink-0">
+            <path d="M15 7.5C15 4.73875 17.2387 2.5 20 2.5C22.7613 2.5 25 4.73875 25 7.5C25 10.2613 22.7613 12.5 20 12.5C17.2387 12.5 15 10.2613 15 7.5Z" fill="white"/>
+            <path d="M15 20C15 17.2387 17.2387 15 20 15C22.7613 15 25 17.2387 25 20C25 22.7613 22.7613 25 20 25C17.2387 25 15 22.7613 15 20Z" fill="white"/>
+            <path d="M15 32.5C15 29.7387 17.2387 27.5 20 27.5C22.7613 27.5 25 29.7387 25 32.5C25 35.2613 22.7613 37.5 20 37.5C17.2387 37.5 15 35.2613 15 32.5Z" fill="white"/>
+            <path d="M2.5 7.5C2.5 4.73875 4.73875 2.5 7.5 2.5C10.2613 2.5 12.5 4.73875 12.5 7.5C12.5 10.2613 10.2613 12.5 7.5 12.5C4.73875 12.5 2.5 10.2613 2.5 7.5Z" fill="white"/>
+            <path d="M2.5 20C2.5 17.2387 4.73875 15 7.5 15C10.2613 15 12.5 17.2387 12.5 20C12.5 22.7613 10.2613 25 7.5 25C4.73875 25 2.5 22.7613 2.5 20Z" fill="white"/>
+            <path d="M2.5 32.5C2.5 29.7387 4.73875 27.5 7.5 27.5C10.2613 27.5 12.5 29.7387 12.5 32.5C12.5 35.2613 10.2613 37.5 7.5 37.5C4.73875 37.5 2.5 35.2613 2.5 32.5Z" fill="white"/>
+            <path d="M27.5 7.5C27.5 4.73875 29.7387 2.5 32.5 2.5C35.2613 2.5 37.5 4.73875 37.5 7.5C37.5 10.2613 35.2613 12.5 32.5 12.5C29.7387 12.5 27.5 10.2613 27.5 7.5Z" fill="white"/>
+            <path d="M37.5 20C37.5 22.7613 35.2613 25 32.5 25C29.7387 25 27.5 22.7613 27.5 20C27.5 17.2387 29.7387 15 32.5 15C35.2613 15 37.5 17.2387 37.5 20Z" fill="white"/>
+            <path d="M37.5 32.5C37.5 35.2613 35.2613 37.5 32.5 37.5C29.7387 37.5 27.5 35.2613 27.5 32.5C27.5 29.7387 29.7387 27.5 32.5 27.5C35.2613 27.5 37.5 29.7387 37.5 32.5Z" fill="white"/>
+          </svg>
+          <div class="space-y-2">
+            <h2 class="text-24 font-bold leading-none">Portafolio</h2>
+            <p>Amplio portafolio de productos y soluciones.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="relative bg-gradient-to-b from-blue to-green">
+    <!-- <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/images/bg-banner.png' ); ?>" alt="" class="absolute w-full h-full object-cover"> -->
     <div class="w-11/12 max-w-screen-lg mx-auto py-24">
       <div class="relative w-8/12 mx-auto flex flex-col items-center space-y-8">
-        <h2 class="text-48 lg:text-64 text-center leading-none uppercase">Impulsa tu futuro digital hoy</h2>
+        <h2 class="text-48 lg:text-64 text-center leading-none uppercase">Cobertura nacional</h2>
+        <p>Contamos con aliados comerciales para cubrir entregas, proyectos y solicitudes en todo México</p>
         <a href="" class="flex items-center justify-center bg-green w-40 h-10 uppercase">Contacto</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="bg-white text-black py-16 space-y-20">
-    <?php get_template_part('components/marquee', null, array('title' => 'Casos de éxito')); ?>
-    <div class="w-11/12 max-w-screen-lg mx-auto space-y-16">
-      <div class="flex items-start justify-between">
-        <div class="md:basis-4/12 relative">
-          <h2 class="text-green uppercase md:absolute md:bottom-full md:pb-2">Casos de éxito</h2>
-          <h2 class="text-32 font-semibold leading-none">La solución TI
-          que tu empresa necesita</h2>
-        </div>
-        <div class="flex space-x-5">
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-      </div>
-      <div class="swiper swiper-casos-exito !overflow-visible">
-        <div class="swiper-wrapper">
-        <?php for ($x = 0; $x <= 10; $x++) { ?>
-          <div class="swiper-slide">
-            <div class="rounded-3xl bg-light-grey p-5 space-y-6">
-              <figure class="rounded-full bg-dark-grey w-28 h-28"></figure>
-              <p>Shadow undo object edit link ellipse mask distribute asset. Inspect team strikethrough rectangle asset horizontal pencil undo slice. Clip comment bold.</p>
-              <p class="text-18">
-                <span class="font-semibold">Gabriela Sánchez</span>, Innovate
-              </p>
-            </div>
-          </div>
-        <?php } ?>
-        </div>
       </div>
     </div>
   </div>

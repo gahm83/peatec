@@ -21,7 +21,7 @@ $custom_logo_url = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class("bg-dark"); ?>>
-	<header id="masthead" class="absolute w-full z-50">
+	<header id="masthead" class="<?php echo is_front_page() ? 'absolute' : 'relative' ;?> w-full z-50">
     <div class="max-w-screen-lg lg:w-11/12 mx-auto px-8">
       <div class="flex items-center justify-between h-12 lg:h-20 bg-blue rounded-b-2xl lg:rounded-b-3xl px-6 w-full">
         <nav class="flex items-center space-x-4">
