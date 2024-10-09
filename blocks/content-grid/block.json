@@ -1,0 +1,15 @@
+{
+  "name": "acf/content-grid",
+  "title": "Content Grid",
+  "description": "Contenido con título animado",
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["testimonial", "quote"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "block.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

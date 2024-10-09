@@ -1,0 +1,15 @@
+{
+  "name": "acf/logo-grid",
+  "title": "Logo Grid",
+  "description": "Retícula de logotipos",
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["testimonial", "quote"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "block.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

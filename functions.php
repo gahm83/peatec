@@ -158,6 +158,18 @@ function theme_gsap_script(){
 add_action( 'wp_enqueue_scripts', 'theme_gsap_script' );
 
 /**
+ * ACF Blocks.
+ */
+add_action( 'init', 'register_acf_blocks' );
+function register_acf_blocks() {
+    register_block_type( __DIR__ . '/blocks/content-grid' );
+    register_block_type( __DIR__ . '/blocks/logo-grid' );
+    register_block_type( __DIR__ . '/blocks/logo-marquee' );
+    register_block_type( __DIR__ . '/blocks/banner' );
+    register_block_type( __DIR__ . '/blocks/success-stories' );
+}
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
